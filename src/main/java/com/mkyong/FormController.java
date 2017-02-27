@@ -33,4 +33,11 @@ public class FormController
 	public @ResponseBody List<Person> PostFormDataJSONArray(@RequestBody List<Person> person) {	
 		return person;
 	}
+	
+	@RequestMapping(value = "/angularcopy", method = RequestMethod.GET)
+    public String angularCopy(Map<String, Object> model) 
+	{
+		return "angularcopy";
+	}
+	
 }
